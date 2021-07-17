@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
-const inquirer = requirer('inquirer');
+const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
 //const questions = [];
@@ -14,13 +14,14 @@ inquirer
     {
         type: 'input',
         name: 'discription',
-        message: 'describe your project'
+        message: 'describe your project?'
     },
+    
     ])
 
 
 // TODO: Create a function to write README file
-fs.writeFile("README.md", process.argv[2], (error) =>{
+fs.writeFile("README.md", data, 'utf8', (error) =>{
     if(error){
         return console.log(error)
     }else{
@@ -29,7 +30,14 @@ fs.writeFile("README.md", process.argv[2], (error) =>{
 });
  
 // TODO: Create a function to initialize app
-function init() {}
+inquirer
+    .prompt([
+        {
+            type: 'input',
+            name: 'title',
+            message: 'What is the title of your project?',
+          },
+    ])
 
 // Function call to initialize app
 init();
