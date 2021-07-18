@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/jeffgilbert24/Professional_README_Generator/issues"
   },
-  "homepage": "https://github.com/jeffgilbert24/Professional_README_Generator#readme"
+  "homepage": "https://github.com/jeffgilbert24/Professional_README_Generator#readme",
+  "devDependencies": {}
 }
