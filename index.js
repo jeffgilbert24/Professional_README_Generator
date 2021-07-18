@@ -8,8 +8,8 @@ const generateReadMe = (answers) =>
   `
 # Title \n ${answers.Title}
 
-## Description \n ${answers.description} 
-\n ### License ${answers.license}
+## Description \n ${answers.Description} 
+\n ### License ${answers.License}
 
 #### Installation Instructions \ n ${answers.installation}
 
@@ -40,6 +40,26 @@ inquirer
         type: 'input',
         name: 'License',
         message: 'choose a license form the list.'
+    },
+    {
+      type: 'input',
+      name: 'installation',
+      message: 'Describe how to install your project.'
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'describe what your project is used for?'
+    },
+    {
+      type: 'input',
+      name: 'contribution',
+      message: 'Who has contributed to this project?'
+    },
+    {
+      type: 'input',
+      name: 'test',
+      message: 'describe how to test your project'
     },
     {
         type: 'input',
