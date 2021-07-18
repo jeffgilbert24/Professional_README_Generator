@@ -25,12 +25,11 @@ const generateReadMe = (answers) =>
 // TODO: Create an array of questions for user input
 inquirer
     .prompt([
-  //  {
-    
-    //    type: 'input',
-      //  name: 'Title',
-    //    message: 'What is the title of your project?'
-   // },
+    {    
+        type: 'input',
+        name: 'Title',
+        message: 'What is the title of your project?'
+    },
     {
         type: 'input',
         name: 'Discription',
@@ -81,15 +80,7 @@ inquirer
 })
 
 
-const tableOfContents = [
-  'title',
-  'Description',
-  'License'
-]
-tableOfContents.forEach((item, index) =>{
-  questions[index].name = item
-})
-  
+
 
 
 
